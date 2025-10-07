@@ -1,11 +1,8 @@
 function ThirdPage() {
   return (
     <div className=" w-full h-full bg-[#f9f6f2]">
-      <div className="absolute inset-0 flex flex-col justify-center items-center px-16 py-16">
-        <p
-          className="text-[#3B4F6B] text-sm text-center leading-relaxed mb-32 max-w-xl"
-          style={{ fontFamily: "monospace" }}
-        >
+      <div className="absolute inset-0 flex flex-col justify-center items-center px-15 py-15">
+        <p className="text-[#3B4F6B] text-sm text-center leading-relaxed mb-32 max-w-xl">
           WE'VE ACHIEVED MUCH TOGETHER AND GOODLUCK AND HAVE A SUCCESSFUL
           JOURNEY.
         </p>
