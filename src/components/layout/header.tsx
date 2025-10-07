@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { IoMdClose } from "react-icons/io";
 import { RxHamburgerMenu } from "react-icons/rx";
+import { Button } from "../common/Button";
 
 export const Header: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -117,9 +118,9 @@ export const Header: React.FC = () => {
               aria-label="Toggle menu"
             >
               {isOpen ? (
-                <IoMdClose className="w-7 h-7" />
+                <IoMdClose className="w-7 h-7 cursor-pointer" />
               ) : (
-                <RxHamburgerMenu className="w-7 h-7" />
+                <RxHamburgerMenu className="w-7 h-7 cursor-pointer" />
               )}
             </button>
             <div className="text-xl ml-4 font-bold">
@@ -203,17 +204,20 @@ export const Header: React.FC = () => {
               {navItems.map((item) => (
                 <div
                   key={item}
-                  className="py-6 border-b border-gray-100 text-md font-semibold"
+                  className="py-6 border-b cursor-pointer border-gray-100  text-md hover:bg-gray-100/50 font-semibold"
                 >
                   {item}
                 </div>
               ))}
-              <button className="w-full bg-orange-400 text-white px-4 py-3 rounded-full mt-4 hover:bg-orange-500 transition-colors text-sm">
+              <Button className="w-full text-white px-4 py-3 rounded-full mt-6  transition-colors text-sm">
                 Weave a Group Card
-              </button>
-              <button className="w-full border-2 border-gray-300 text-gray-700 px-4 py-3 rounded-full mt-2 hover:bg-gray-50 transition-colors text-sm">
+              </Button>
+              <Button
+                variant="outline"
+                className="w-full border-2 cursor-pointer px-4 py-3 rounded-full mt-6  transition-colors text-sm"
+              >
                 Sign in
-              </button>
+              </Button>
             </nav>
           )}
         </div>
