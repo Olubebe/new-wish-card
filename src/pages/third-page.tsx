@@ -6,8 +6,8 @@ function ThirdPage() {
           className="text-[#3B4F6B] text-sm text-center leading-relaxed mb-32 max-w-xl"
           style={{ fontFamily: "monospace" }}
         >
-          WE'VE ACHIEVED MUCH TOGETHER AND ANTICIPATE FURTHER SUCCESS WITH YOU
-          BY OUR SIDE.
+          WE'VE ACHIEVED MUCH TOGETHER AND GOODLUCK AND HAVE A SUCCESSFUL
+          JOURNEY.
         </p>
 
         <div className="w-px h-40 bg-[#3B4F6B] mb-16"></div>

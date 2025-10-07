@@ -5,6 +5,9 @@ import Paper from "./paper";
 import NavigationButton from "./navigation-button";
 import { paperData } from "../../types/paperConfig";
 import PageContent from "../../pages/pageContent";
+import { Button } from "../common/Button";
+import { FaArrowRight } from "react-icons/fa";
+import { FaArrowLeft } from "react-icons/fa6";
 
 const Book: React.FC = () => {
   const {
@@ -189,13 +192,13 @@ const Book: React.FC = () => {
         </div>
 
         <div className="flex justify-between items-center mt-6 px-4 w-full max-w-sm">
-          <button
+          <Button
             onClick={handlePrevCard}
             disabled={currentCardIndex === 0 || isTransitioning}
             className="w-14 h-14 bg-white text-powderblue rounded-full shadow-lg font-semibold disabled:opacity-30 disabled:cursor-not-allowed hover:bg-gray-50 transition-all flex items-center justify-center text-2xl active:scale-95"
           >
-            ←
-          </button>
+            <FaArrowLeft className="h-3 w-3 text-black" />
+          </Button>
           <div className="flex gap-2">
             {allCards.map((_, index) => (
               <div
@@ -208,15 +211,15 @@ const Book: React.FC = () => {
               />
             ))}
           </div>
-          <button
+          <Button
             onClick={handleNextCard}
             disabled={
               currentCardIndex === allCards.length - 1 || isTransitioning
             }
             className="w-14 h-14 bg-white text-powderblue rounded-full shadow-lg font-semibold disabled:opacity-30 disabled:cursor-not-allowed hover:bg-gray-50 transition-all flex items-center justify-center text-2xl active:scale-95"
           >
-            →
-          </button>
+            <FaArrowRight className="h-3 w-3 text-black" />
+          </Button>
         </div>
       </div>
 
