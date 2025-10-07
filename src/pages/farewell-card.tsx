@@ -91,10 +91,7 @@ export const FarewellCard: React.FC<FarewellCardProps> = ({
         )}
 
         <div className="text-center space-y-4 flex-grow flex flex-col justify-center">
-          <div
-            className="text-lg leading-relaxed"
-            style={{ fontFamily: "Bradley Hand, cursive, sans-serif" }}
-          >
+          <div className="text-lg leading-relaxed">
             {typeof message === "string"
               ? message.split("\n").map((line, index) => (
                   <p key={index} className="mb-2">
@@ -111,12 +108,7 @@ export const FarewellCard: React.FC<FarewellCardProps> = ({
       </div>
 
       <div className="text-right mt-6">
-        <p
-          className="text-xl font-semibold"
-          style={{ fontFamily: "Bradley Hand, cursive, sans-serif" }}
-        >
-          {signature}
-        </p>
+        <p className="text-md font-semibold italic">{signature}</p>
       </div>
     </div>
   );

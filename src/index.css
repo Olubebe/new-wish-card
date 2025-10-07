@@ -57,6 +57,16 @@
     font-weight: 700;
     font-style: normal;
   }
+  .monsieur-la-doulaise-regular {
+    font-family: "Monsieur La Doulaise", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .cookie-regular {
+    font-family: "Cookie", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
 
   .perspective-1500 {
     perspective: var(--perspective-1500);

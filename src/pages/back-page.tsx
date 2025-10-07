@@ -1,7 +1,6 @@
 function BackPage() {
   return (
     <div className=" w-full h-full ">
-      {/* Content */}
       <div className="absolute inset-0 flex flex-col justify-center items-center px-16 py-16">
         <div className="">
           <img
