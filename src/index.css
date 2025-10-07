@@ -1,6 +1,4 @@
 @import "tailwindcss";
-/* @import url('https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap'); */
-@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap");
 
 @theme {
   /* Custom colors */
@@ -53,8 +51,8 @@
   .back {
     transition: transform 1.2s cubic-bezier(0.45, 0.05, 0.55, 0.95);
   }
-  .figtree-sans {
-    font-family: "Figtree", sans-serif;
+  .my-font {
+    font-family: "Nunito", sans-serif;
     font-optical-sizing: auto;
     font-weight: 700;
     font-style: normal;

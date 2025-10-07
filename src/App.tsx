@@ -46,17 +46,19 @@ export default function App() {
   }, []);
   return (
     <>
-      <Header />
-      <MainLayout
-        sidebar={
-          <Sidebar
-            contributionsCount={TOTAL_CONTRIBUTIONS}
-            onWeaveNewCard={handleWeaveNewCard}
-          />
-        }
-      >
-        <Book />
-      </MainLayout>
+      <div className="my-font">
+        <Header />
+        <MainLayout
+          sidebar={
+            <Sidebar
+              contributionsCount={TOTAL_CONTRIBUTIONS}
+              onWeaveNewCard={handleWeaveNewCard}
+            />
+          }
+        >
+          <Book />
+        </MainLayout>
+      </div>
     </>
   );
 }
