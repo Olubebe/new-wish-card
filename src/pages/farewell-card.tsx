@@ -83,7 +83,7 @@ export const FarewellCard: React.FC<FarewellCardProps> = ({
 
   return (
     <div
-      className={`w-full h-full ${backgroundColor} overflow-y-scroll p-8 flex flex-col justify-between overflow-y-auto`}
+      className={`w-full h-full ${backgroundColor} overflow-y-scroll p-4 lg:p-8 flex flex-col justify-between overflow-y-auto`}
     >
       <div className="flex flex-col items-center space-y-6">
         {mediaPosition === "top" && media && (
